@@ -1,3 +1,9 @@
+call pathogen#infect()
+call pathogen#helptags()
+
+filetype plugin indent on
+syntax on
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -20,7 +26,8 @@ let python_highlight_all = 1
 
 set statusline =
 
-source ~/.vim/ropevim/ftplugin/python/ropevim.vim
+" source ~/.vim/ropevim/ftplugin/python/ropevim.vim
+
 " Add rope complenition
 au BufRead,BufNewFile *.py,*pyw let ropevim_vim_completion=1
 let rope_vim_completion=1
