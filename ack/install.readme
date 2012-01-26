@@ -1,0 +1,9 @@
+As a Magento developer I often have need to search through hundreds to thousands of files just to find a specific piece of text. The tried and true work horse for this type of operation is grep. Unfortunately, grep is a bit sluggish when it comes to a directory tree as large as Magento’s. Enter ack. Ack is fast. I dare say ack is wickedly fast.
+
+With any great search tool, text editor integration is important. For Vim there’s a great plugin for ack. If you’re running any fairly modern flavor of Ubuntu, when you try the plugin you’ll likely encounter the message ”/bin/bash: ack: command not found”.
+
+According the the instructions on the ack Vim plugin page you have to install it with “sudo aptitude install ack-grep”. After that, you’ll still get “/bin/bash: ack: command not found”. The solution?
+
+sudo ln -s /usr/bin/ack-grep /usr/local/bin/ack
+
+After that, you’ll be searching in Vim at blazing speeds.

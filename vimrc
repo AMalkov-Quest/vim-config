@@ -47,6 +47,8 @@ au BufRead,BufNewFile *.py,*pyw nnoremap <silent>, :call RopeShowDoc()<CR>
 
 source ~/.vim/bufexplorer/bufexplorer.vim
 
+source ~/.vim/ack/plugin/ack.vim
+
 source ~/.vim/makegreen/makegreen.vim
 autocmd BufNewFile,BufRead *.py compiler nose
 let $DJANGO_SETTINGS_MODULE = "settings"
@@ -93,7 +95,7 @@ map <C-t> <esc>Makegreen<cr>
 " Ropevim
 map <leader>g :RopeGotoDefinition<CR>
 map <leader>m :RopeMove<CR>
-map <leader>r :RopeRename<CR>
+map <leader>rr :RopeRename<CR>
 map <leader>f :RopeFindOccurrences<CR>
 
 " TagList
