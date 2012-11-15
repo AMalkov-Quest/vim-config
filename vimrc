@@ -21,6 +21,7 @@ set tabstop=4
 set smartindent
 set foldmethod=indent
 set foldlevel=99
+set expandtab
 
 let python_highlight_all = 1
 
