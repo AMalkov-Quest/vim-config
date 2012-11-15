@@ -102,3 +102,9 @@ map <leader>f :RopeFindOccurrences<CR>
 nnoremap <silent> <C-F8> :TlistOpen<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 map <C-F7> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+" Load run code plugin
+let g:pymode_run = 1
+
+" Key for run python code
+let g:pymode_run_key = '<leader>e'
