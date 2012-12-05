@@ -22,6 +22,8 @@ set smartindent
 set foldmethod=indent
 set foldlevel=99
 set expandtab
+" To switch between spaces and tabs use
+" set expandtab!
 
 let python_highlight_all = 1
 
